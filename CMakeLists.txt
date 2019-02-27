@@ -1,5 +1,5 @@
 # Minimum CMake required
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.9)
 
 # Project
 project(nforce LANGUAGES CXX VERSION 0.1.0)
