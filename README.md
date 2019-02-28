@@ -1,5 +1,7 @@
 # nforce
 
+[![Build Status](https://travis-ci.org/kenavolic/nforce.svg?branch=master)](https://travis-ci.org/kenavolic/nforce)
+
 nforce is a c++ 17 poc library used to apply textual user-defined boolean rules
 defined through a boolean expression to a domain specific model.
 
@@ -11,8 +13,8 @@ them and apply the defined constraint to the application model.
 
 Tests have been performed on the following platforms:
 
-  * Visual studio 2017
-  * gcc 7.3.0
+  * clang++-7
+  * g++-7
 
 # Install
 
