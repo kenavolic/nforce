@@ -111,4 +111,4 @@ before_script:
 script:
   # build and run tests
   - cmake --build . -- -j${JOBS}
-  - ctest --output-on-failure -j${JOBS}
+  - ctest -V -j${JOBS}
