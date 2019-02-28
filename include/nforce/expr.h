@@ -90,7 +90,7 @@ public:
     return !m_op->interpret();
   }
 
-  void set_op(std::unique_ptr<expr> expr) { m_op = std::move(expr); }
+  void set_op(std::unique_ptr<expr> expr) override { m_op = std::move(expr); }
 
 private:
   std::unique_ptr<expr> m_op;
