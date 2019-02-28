@@ -36,11 +36,13 @@ token lexer::rule() {
 //-------------------------------------
 // Public
 
-lexer::lexer(const std::string &input) : m_in{input}, m_it{std::cbegin(m_in)} {
+lexer::lexer(const std::string &input) : m_in{input} {
   // clean
   m_in.erase(std::remove_if(std::begin(m_in), std::end(m_in),
                             [](unsigned char c) { return std::isspace(c); }),
              std::end(m_in));
+
+  m_it = std::cbegin(m_in);
 }
 
 token lexer::next() {
