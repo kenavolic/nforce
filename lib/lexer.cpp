@@ -29,7 +29,7 @@ token lexer::rule() {
   m_it = match;
 
   return std::make_pair(token_type::RULE,
-                        m_in.substr(ruleBegin - std::cbegin(m_in),
+                        m_in.substr(std::distance(std::cbegin(m_in), ruleBegin),
                                     std::distance(ruleBegin, match)));
 }
 
